@@ -36,6 +36,7 @@ public class UserController {
     @PostMapping("/add")
     public Result add(User user) {
         userService.save(user);
+        System.out.println("2018-12-12");
         return ResultGenerator.genSuccessResult();
     }
 
